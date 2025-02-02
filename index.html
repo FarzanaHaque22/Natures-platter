@@ -39,19 +39,19 @@
 </head>
 <body class="Sora">
     <header class="bg-gradient-to-b from-white to-orange-100">
-        <nav>
-            <div class="flex justify-around m-4">
+        <nav class="sm:border-4 border-green-600">
+            <div class="flex justify-around m-4 sm:flex sm:justify-between">
                 <div class=" w-1/6 ">
                     <img src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\logo-header.png" >
                 </div>
                 <div>
-                    <ul class="flex p-3 gap-8 font-xl text-black">
+                    <ul class="flex p-3 gap-8 font-xl text-black sm:hidden">
                         <li><a href="products.com">Product</a></li>
                         <li><a href="services.com">Services</a></li>
                         <li><a href="contact-us.com">Contact us</a></li>
                     </ul>
                 </div>
-                 <div class="flex gap-6">
+                 <div class="flex gap-6 sm:hidden">
 
                     <div class=" py-3 gap-2">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -62,6 +62,7 @@
                     <button class="btn btn-ouline  text-white bg-[#179800] text-xl text-center hover:bg-pink-400 rounded-lg">Register</button>
                 </div>
                 </div>
+                <i class="fa-solid fa-bars hidden sm:block"></i>
             </div>
         </nav>
         <section>
@@ -78,7 +79,7 @@
     </header>
     <main>
         <h4 class="font-semibold text-4xl text-left px-28 pt-28 pb-12 text-[#179800]">Services</h4>
-        <div class="flex flex-row gap-6 mx-28 mb-28">
+        <div class="flex flex-row gap-6 mx-28 mb-28 sm:flex sm:flex-col sm:gap-5  sm:w-2/3">
         <div class="bg-[#EFEBE3] rounded-xl text-center  flex flex-col items-center justify-center px-8 pt-8 pb-11">
             <img class=" bg-white p-4 rounded-full"  src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\service.png">
             <h4 class="font-semibold text-2xl">24/7 Services </h4>
@@ -97,108 +98,214 @@
         </div>
         <section class="bg-[#EFEBE3] pb-32">
             <h4 class="font-semibold text-4xl text-left pt-32 pl-32 pb-11 text-[#179800] ">Popular Products</h4>
-        <div class="flex flex-row gap-4 mx-16 pl-16 ">
+        <div class="flex flex-row gap-4 mx-16 pl-16 sm:flex-col sm:w-auto ">
             <div class=" flex flex-col px-8 pt-11 gap-4 bg-gradient-to-br from-green-500 to-lime-200  rounded-xl">
                 <h5 class="font-normal text-white text-3xl text-left">30% Off</h5>
                 <p class="font-normal text-xl">Discover a world of treats, toys, and <br> essentials handpicked for </p>
                 <button class=" btn btn-ouline max-w-40 text-black bg-white text-center hover:bg-yellow-300 rounded-lg  font-normal text-2xl">Buy now</button>
                 <div><img class="w-56  justify-self-end" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\vegetable-offer.png"></div>
             </div>
-            <div class="grid grid-cols-3 gap-3 w-2/3">
+            <div class="grid grid-cols-3 gap-5 w-2/3 sm:grid-cols-2 sm:w-3/4 sm:justify-center sm:items-center sm:p-10 sm:mx-7">
                 <div class="flex flex-row bg-white  rounded-xl">
-                    <img class="w-12 bg-[#EFEBE3] m-3" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\onion.png">
-                    <div class="flex flex-col">
+                    <img class="w-1/3 bg-[#EFEBE3] m-3 rounded-xl" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\onion.png">
+                    <div class="flex flex-col pt-2 pl-4 pr-8 justify-center items-center">
                         <div class="flex flex-row gap-3"> 
-                            <i class="fa-solid fa-star"></i>
-                            <h6>4.5</h6>
+                            <i class="fa-solid fa-star text-yellow-400 pt-2"></i>
+                            <h6 class="font-medium text-xl">4.5</h6>
                         </div> 
-                        <h5>Onion 1Kg</h5>
-                    <h6>$39.99</h6></div>
+                        <h5 class="font-medium text-xl">Onion 1Kg</h5>
+                    <h6 class="font-medium text-xl">$39.99</h6></div>
                 </div>
                 <div class="flex flex-row bg-white  rounded-xl">
-                    <img class="w-12 bg-[#EFEBE3] m-3" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\potato.png">
-                    <div class="flex flex-col">
+                    <img class="w-1/3 bg-[#EFEBE3] m-3 rounded-xl" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\potato.png">
+                    <div class="flex flex-col pt-2 pl-4 pr-8 justify-center items-center">
                    <div class="flex flex-row gap-3">
-                    <i class="fa-solid fa-star" ></i>
-                    <h6>4.5</h6>
+                    <i class="fa-solid fa-star text-yellow-400 pt-2" ></i>
+                    <h6 class="font-medium text-xl">4.5</h6>
                    </div>
-                    <h5>Potato 500gm</h5>
-                    <h6>$39.99</h6></div>
+                    <h5 class="font-medium text-xl">Potato 0.5Kg</h5>
+                    <h6 class="font-medium text-xl">$39.99</h6></div>
                 </div>
                 <div class="flex flex-row bg-white  rounded-xl">
-                    <img class="w-12 bg-[#EFEBE3] m-3" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\onion.png">
-                    <div class="flex flex-col">
+                    <img class="w-1/3 bg-[#EFEBE3] m-3 rounded-xl" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\onion.png">
+                    <div class="flex flex-col pt-2 pl-4 pr-8 justify-center items-center">
                     <div class="flex flex-row gap-3">
-                        <i class="fa-solid fa-star" ></i>
-                        <h6>4.5</h6></div>
-                    <h5>Onion 500gm</h5>
-                    <h6>$39.99</h6></div>
+                        <i class="fa-solid fa-star text-yellow-400 pt-2" ></i>
+                        <h6 class="font-medium text-xl">4.5</h6></div>
+                    <h5 class="font-medium text-xl">Onion 0.5Kg</h5>
+                    <h6 class="font-medium text-xl">$39.99</h6></div>
                 </div>
                 <div class="flex flex-row bg-white  rounded-xl">
                     
-                    <img class="w-12 bg-[#EFEBE3] m-3" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\tomato.png">
-                    <div class="flex flex-col">
+                    <img class="w-1/3 bg-[#EFEBE3] m-3 rounded-xl" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\tomato.png">
+                    <div class="flex flex-col pt-2 pl-4 pr-8 justify-center items-center">
                     <div class="flex flex-rowgap-3">
-                        <i class="fa-solid fa-star" ></i>
-                        <h6>4.5</h6></div>
-                    <h5>Tomato 1Kg</h5>
-                    <h6>$39.99</h6></div>
+                        <i class="fa-solid fa-star text-yellow-400 pt-2" ></i>
+                        <h6 class="font-medium text-xl">4.5</h6></div>
+                    <h5 class="font-medium text-xl">Tomato 1Kg</h5>
+                    <h6 class="font-medium text-xl">$39.99</h6></div>
                 </div>
                 <div class="flex flex-row bg-white  rounded-xl">
-                    <img class="w-12 bg-[#EFEBE3] m-3" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\onion.png">
-                    <div class="flex flex-col">
+                    <img class="w-1/3 bg-[#EFEBE3] m-3 rounded-xl" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\onion.png">
+                    <div class="flex flex-col pt-2 pl-4 pr-8 justify-center items-center">
                     <div class="flex flex-row gap-3">
-                        <i class="fa-solid fa-star" ></i>
-                        <h6>4.5</h6>
+                        <i class="fa-solid fa-star text-yellow-400 pt-2" ></i>
+                        <h6 class="font-medium text-xl">4.5</h6>
                     </div>
-                    <h5>Onion 1Kg</h5>
-                    <h6>$39.99</h6></div>
+                    <h5 class="font-medium text-xl">Onion 1Kg</h5>
+                    <h6 class="font-medium text-xl">$39.99</h6></div>
                 </div>
                 <div class="flex flex-row bg-white  rounded-xl">
-                    <img class="w-12 bg-[#EFEBE3] m-3" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\potato.png">
-                    <div class="flex flex-col">
+                    <img class="w-1/3 bg-[#EFEBE3] m-3 rounded-xl" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\potato.png">
+                    <div class="flex flex-col pt-2 pl-4 pr-8 justify-center items-center">
                    <div class="flex flex-row gap-3">
-                    <i class="fa-solid fa-star" ></i>
-                    <h6>4.5</h6>
+                    <i class="fa-solid fa-star text-yellow-400 pt-2" ></i>
+                    <h6 class="font-medium text-xl">4.5</h6>
                    </div>
-                    <h5>Potato 1Kg</h5>
-                    <h6>$39.99</h6></div>
+                    <h5 class="font-medium text-xl">Potato 1Kg</h5>
+                    <h6 class="font-medium text-xl">$39.99</h6></div>
                 </div>
                 <div class="flex flex-row bg-white  rounded-xl">
-                    <img class="w-12 bg-[#EFEBE3] m-3" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\tomato.png">
-                    <div class="flex flex-col">
+                    <img class="w-1/3 bg-[#EFEBE3] m-3 rounded-xl" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\tomato.png">
+                    <div class="flex flex-col pt-2 pl-4 pr-8 justify-center items-center">
                    <div class="flex flex-row gap-3">
-                    <i class="fa-solid fa-star" ></i>
-                    <h6>4.5</h6>
+                    <i class="fa-solid fa-star text-yellow-400 pt-2" ></i>
+                    <h6 class="font-medium text-xl">4.5</h6>
                    </div>
-                    <h5>Tomato 1Kg</h5>
-                    <h6>$39.99</h6></div>
+                    <h5 class="font-medium text-xl">Tomato 1Kg</h5>
+                    <h6 class="font-medium text-xl">$39.99</h6></div>
                 </div>
                 <div class="flex flex-row  bg-white  rounded-xl">
-                    <img class="w-12 bg-[#EFEBE3] m-3" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\potato.png"> 
-                    <div class="flex flex-col">
+                    <img class="w-1/3 bg-[#EFEBE3] m-3 rounded-r-xl" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\potato.png"> 
+                    <div class="flex flex-col pt-2 pl-4 pr-8 justify-center items-center">
                     <div class="flex flex-row gap-3">
-                        <i class="fa-solid fa-star" ></i>
-                        <h6>4.5</h6></div>
-                    <h5>Potato 2Kg</h5>
-                    <h6>$39.99</h6>
+                        <i class="fa-solid fa-star text-yellow-400 pt-2" ></i>
+                        <h6 class="font-medium text-xl">4.5</h6></div>
+                    <h5 class="font-medium text-xl">Potato 2Kg</h5>
+                    <h6 class="font-medium text-xl">$39.99</h6>
                      </div>
                 </div>
-                <div class="flex flex-row  bg-white  rounded-xl">
-                    <img class="w-12 bg-[#EFEBE3] m-3" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\tomato.png">
-                    <div class="flex flex-col">
+                <div class="flex flex-row  bg-white  rounded-xl sm:hidden">
+                    <img class="w-1/3 bg-[#EFEBE3] m-3 rounded-xl" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\tomato.png">
+                    <div class="flex flex-col pt-2 pl-4 pr-8 justify-center items-center">
                     <div class="flex flex-row gap-3">
-                        <i class="fa-solid fa-star" ></i>
-                    <h6>4.5</h6>
+                        <i class="fa-solid fa-star text-yellow-400 pt-2" ></i>
+                    <h6 class="font-medium text-xl">4.5</h6>
                     </div>
-                    <h5>Tomato 2Kg</h5>
-                    <h6>$39.99</h6>
+                    <h5 class="font-medium text-xl">Tomato 2Kg</h5>
+                    <h6 class="font-medium text-xl">$39.99</h6>
                 </div>
                 </div>
             </div>
         </div>
         </section>
+        <section>
+            <h4 class="font-semibold text-4xl text-left pt-32 pl-32 pb-12 text-[#179800]">Arrival & Offers</h4>
+        <div class="flex flex-row gap-5 sm:flex-col sm:justify-center sm:items-center">
+            <div class="flex flex-row gap-12 bg-[#115414] ml-32 w-2/4 rounded-xl  sm:w-3/4 sm:ml-1">
+                <div class="flex flex-col justify-center items-center gap-8 p-5 ">
+                    <img src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\dawat-logo.png">
+                    <button class=" btn btn-ouline border-0 text-white bg-[#63B76D]  Poppins text-2xl font-normal hover:bg-blue-600  text-center rounded-md">Cook Exotic Dishes</button>
+                    <h3 class="Poppins text-white text-4xl">UP to <span class="font-bold">20% OFF</span></h3>
+                </div>
+                <div>
+                    <img class="px-5 pt-20" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\dawat-mock-up.png">
+                </div>
+            </div>
+            <div class="flex flex-row gap-5 bg-[#102861]  w-1/3 mr-24 rounded-xl sm:w-3/4 sm:mr-1">
+                <div  class="flex flex-col  gap-8 p-5 ">
+                    <div  class=" justify-start"  > <img src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\india-gate-logo.png"></div>
+                    <button class=" btn btn-ouline border-0 text-white bg-[#2A4D97]  Poppins text-xl font-normal hover:bg-red-800  text-center rounded-md">World's No.1 Rice</button>
+                    <h3 class="Poppins text-white text-3xl px-3">UP to <span class="font-bold">40% OFF</span></h3>
+                </div>
+                <div>
+                    <img class=" px-5 pt-24 "  src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\india-gate-mock-up.png">
+                </div>
+            </div>
+        </div>
+        </section>
+        <section>
+            <h3 class="pt-20 font-semibold text-4xl text-left pl-32 pb-5 text-[#179800]">Customer Reviews</h3>
+            <p class="py-5 pl-32 font-medium text-xl text-left text-slate-700 ">See what our customers say about our products</p>
+            <div class="grid grid-cols-2 gap-5 w-auto mx-32 my-12 sm:grid-cols-1">
+                <div class="flex flex-row gap-3 bg-pink-300 rounded-lg p-5  justify-center items-center">
+                    <div><img class="rounded-3xl p-5 bg-pink-100  w-1/2" src="C:\Users\farza\Downloads\review.jpg"></div>
+                    <div class="flex flex-col p-5">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <h5 class="font-semibold text-xl p-2">Angela Mark</h5>
+                    <h6 class="font-normal text-xs p-2">Entrepenuer</h6>
+                    <p class="font-normal text-xl p-3">Clean and beautiful packaging </p></div>
+                </div>
+                <div class="flex flex-col bg-purple-300 rounded-lg p-5 justify-center items-center">
+                    <div><img class="rounded-3xl p-5 bg-purple-100 w-1/3" src="C:\Users\farza\Downloads\review.jpg"></div>
+                    <div class="flex flex-col p-5">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <h5 class="font-semibold text-xl p-2">Mary Michael</h5>
+                    <h6 class="font-normal text-xs p-2">Student</h6>
+                    <p class="font-normal text-xl p-3">Clean and beautiful packaging </p></div>
+                </div>
+                <div class="flex flex-row-reverse bg-yellow-300 rounded-lg p-5 justify-center items-center">
+                    <div><img  class="rounded-3xl p-5 bg-yellow-100 w-2/4" src="C:\Users\farza\Downloads\review.jpg"></div>
+                    <div class="flex flex-col p-5">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <h5 class="font-semibold text-xl p-2">Peter Stephen</h5>
+                    <h6 class="font-normal text-xs p-2">Content creator</h6>
+                    <p class="font-normal text-xl p-3">Clean and beautiful packaging </p></div>
+                </div>
+                <div class="flex flex-row-reverse flex-grow bg-teal-300 rounded-lg p-5 justify-center items-center">
+                    <div><img  class="rounded-3xl p-5 bg-teal-100 w-2/3" src="C:\Users\farza\Downloads\review.jpg"></div>
+                    <div class="flex flex-col p-5">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <h5 class="font-semibold text-xl p-2">Ana Rhodes</h5>
+                    <h6 class="font-normal text-xs p-2">Fitness guide</h6>
+                    <p class="font-normal text-xl p-3">Clean and beautiful packaging </p></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class=" relative inset-y-20 z-20 bg-[#EFEBE3]  flex flex-row gap-28 rounded-2xl mx-32 mt-40 sm:flex-col sm:gap-8 sm:p-14 ">
+                <div>
+                    <img class="py-20 px-14 sm:p-5" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\vegetable-busket.png">
+                </div>
+                <div class="flex flex-col gap-5 justify-start items-start sm:pt-5 sm:justify-center sm:items-center">
+                    <h4 class="pt-24 pb-3 font-semibold text-4xl sm:pt-10">Get Grocery News!</h4>
+                    <p class="font-normal text-xl">Exclusive training tips, ticks, product deals and more.</p>
+                    <input type="email" placeholder="Enter email..." class="font-normal text-xs w-2/3 p-4 rounded-xl">
+                    <button class="btn btn-outline w-1/3 bg-[#179800] text-white border-0 hover:bg-sky-600">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        
     </main>
+    <footer> 
+        <div class=" flex flex-row justify-around  py-36   bg-[#179800] text-white sm:flex-col sm:pt-30 sm:pb-10 sm:px-4 sm:gap-8">
+        <div class="flex flex-col">
+            <div>
+                <img class="pb-3" src="C:\projects\B11-A3-Living-Lab\Assignment_03_Category_0002\c2-assets\logo-footer.png">
+            </div>
+            <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+        </div>
+        <div class="">
+            <ul class="flex flex-col gap-8">
+                <li><a href="footerlink"></a>Product</li>
+                <li><a href="footerlink"></a>Services</li>
+                <li><a href="footerlink"></a>About Us</li>
+            </ul>
+        </div>
+        <div class="flex items-end">
+        <div class="flex flex-col ">
+            <h4 class="font-medium text-xl pb-5">Follow us</h4>
+            <div class="flex flex-row gap-7">
+            <a href="icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="icon"><i class="fa-brands fa-youtube"></i></a>
+            <a href="icon"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        </div>
+    </div>
+        
+        </div>
+    </footer>
     
 </body>
 </html>
